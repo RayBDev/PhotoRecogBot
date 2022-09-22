@@ -65,7 +65,7 @@ app.get('/api/', (req, res) => {
   res.send('it is working');
 });
 app.post('/api/authToken', authenticateToken, (req, res) => {
-  refreshToken.refreshAuthToken(req, res, generateAccessToken);
+  refreshToken.refreshAuthToken(req, res, db, generateAccessToken);
 });
 app.post('/api/signin', (req, res) => {
   signin.handleSignin(req, res, db, bcrypt, generateAccessToken);
