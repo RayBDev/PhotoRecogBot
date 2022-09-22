@@ -234,7 +234,9 @@ const App = () => {
 
   const onRouteChange = (route: RouteType) => {
     if (route === 'signout') {
-      Cookies.remove('checkToken');
+      Cookies.remove('checkToken', {
+        domain: process.env.REACT_APP_DOMAIN_URL,
+      });
       setInput({
         type: 'general',
         url: '',
