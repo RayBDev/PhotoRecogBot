@@ -1,0 +1,24 @@
+.image-dual-ring {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+.image-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #3b82f6;
+  border-color: #3b82f6 transparent #3b82f6 transparent;
+  animation: image-dual-ring 1.2s linear infinite;
+}
+@keyframes image-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
