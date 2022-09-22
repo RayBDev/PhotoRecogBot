@@ -1,8 +1,8 @@
 <p align="center">
-    <img alt="Photo RecogBot Frontend" src="https://github.com/RayBDev/PhotoRecogBot/blob/master/src/components/Logo/brain.png" width="60" />
+    <img alt="Photo RecogBot Frontend" src="https://github.com/RayBDev/PhotoRecogBot/blob/main/client/public/android-chrome-512x512.png" width="60" />
 </p>
 <h1 align="center">
-  Photo RecogBot Frontend
+  Photo RecogBot Full Stack App
 </h1>
 
 This is the Frontend of the [Photo RecogBot Application](https://github.com/RayBDev/PhotoRecogBot).
