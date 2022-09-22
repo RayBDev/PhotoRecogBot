@@ -1,5 +1,6 @@
 # Dependency directories
 /node_modules
+client/node_modules
 
 # dotenv environment variable files
 .env
@@ -26,3 +27,5 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
+
+*.asc
