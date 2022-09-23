@@ -1,0 +1,7 @@
+CLARIFAI_API_KEY=xxxxxxxx
+DATABASE_URL=postgresql://xxxxxx:xxxxx@xxxxx.com:5432/xxxxxxxxxxx
+DEBUG=knex:*
+JWT_SECRET=xxxxxxx
+NODE_ENV=development
+ORIGIN_URL=http://127.0.0.1:3000
+DOMAIN_URL=127.0.0.1:3000
