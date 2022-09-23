@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import Cookies from 'js-cookie';
+import Cookies from 'js-cookie';
 import axios from 'axios';
 
 import Navigation from './components/Navigation/Navigation';
@@ -65,8 +65,7 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    // const checkTokenExists = Cookies.get('checkToken');
-    const checkTokenExists = document.cookie.split('checkToken=')[1];
+    const checkTokenExists = Cookies.get('checkToken');
 
     if (checkTokenExists) {
       axios({
@@ -235,8 +234,10 @@ const App = () => {
 
   const onRouteChange = (route: RouteType) => {
     if (route === 'signout') {
-      // Delete checkToken Cookie
-      document.cookie = `checkToken=; Max-Age=0; path=/; domain=.rbernard.ca`;
+      Cookies.remove('checkToken', {
+        path: '/',
+        domain: process.env.REACT_APP_DOMAIN_URL,
+      });
 
       setInput({
         type: 'general',
