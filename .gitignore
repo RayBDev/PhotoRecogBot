@@ -4,7 +4,6 @@ client/node_modules
 
 # dotenv environment variable files
 .env
-.env
 .env.local
 .env.development.local
 .env.test.local
