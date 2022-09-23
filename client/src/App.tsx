@@ -236,7 +236,7 @@ const App = () => {
   const onRouteChange = (route: RouteType) => {
     if (route === 'signout') {
       // Delete checkToken Cookie
-      document.cookie = `checkToken=; Max-Age=0; path=/; domain=${process.env.REACT_APP_DOMAIN_URL}`;
+      document.cookie = `checkToken=; Max-Age=0; path=/; domain=.rbernard.ca`;
 
       setInput({
         type: 'general',
