@@ -28,7 +28,7 @@ const Signin = ({ loadUser, onRouteChange }: PropTypes) => {
           <div className="px-6 py-10">
             <div className="flex items-center text-center justify-center mb-5">
               <img src={logo} alt="RecogBot Logo" className="w-14 h-14 mr-3" />
-              <h1 className="text-3xl">Photo RecogBot</h1>
+              <h1 className="text-3xl dark:text-white">Photo RecogBot</h1>
             </div>
 
             <p className="mt-1 text-center text-gray-500 dark:text-gray-400">
@@ -79,7 +79,7 @@ const Signin = ({ loadUser, onRouteChange }: PropTypes) => {
                       Email Address
                     </label>
                     <Field
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 dark:text-gray-200 placeholder-gray-500 bg-white border rounded-md border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
                       type="email"
                       name="email"
                       aria-label="Email Address"
@@ -97,7 +97,7 @@ const Signin = ({ loadUser, onRouteChange }: PropTypes) => {
                       Password
                     </label>
                     <Field
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 dark:text-gray-200 placeholder-gray-500 bg-white border rounded-md border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
                       type="password"
                       name="password"
                       aria-label="Password"
