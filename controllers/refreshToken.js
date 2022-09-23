@@ -2,7 +2,7 @@ const refreshAuthToken = (req, res, db, generateAccessToken) => {
   // Get New Entry Count
   db.select(['id', 'name', 'email', 'entries', 'created_at'])
     .from('users')
-    .where('email', '=', email)
+    .where('email', '=', req.user.email)
     .then((user) => {
       // Generate New Tokens
       const token = generateAccessToken(user[0]);
