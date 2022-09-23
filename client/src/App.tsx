@@ -65,7 +65,8 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    const checkTokenExists = Cookies.get('checkToken');
+    // const checkTokenExists = Cookies.get('checkToken');
+    const checkTokenExists = document.cookie.split('checkToken=')[1];
 
     if (checkTokenExists) {
       axios({
@@ -234,9 +235,9 @@ const App = () => {
 
   const onRouteChange = (route: RouteType) => {
     if (route === 'signout') {
-      Cookies.remove('checkToken', {
-        domain: process.env.REACT_APP_DOMAIN_URL,
-      });
+      // Delete checkToken Cookie
+      document.cookie = `checkToken=; Max-Age=0; path=/; domain=${process.env.REACT_APP_DOMAIN_URL}`;
+
       setInput({
         type: 'general',
         url: '',
