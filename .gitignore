@@ -13,7 +13,7 @@ client/node_modules
 /coverage
 
 # production
-/build
+client/build
 
 # misc
 .DS_Store
@@ -28,3 +28,4 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 *.asc
+client/package-lock.json
